@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" sizes="192x192" href="icon/icon.png">
+    <link rel="apple-touch-icon" href="icon/icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="movieservice.css">
+    <meta charset="UTF-8">
+    <title>RMDB</title>
+</head>
+<body>
+
+<div id=pageContainer>
+    <nav class="navbar navbar-inverse" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">RMDB</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Media Center</a></li>
+                    <li class="active">
+                        <a href="rmdb.html">Movies</a></li>
+                    <li><a id="favoritemovie"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <input type="text" class="form-control" name="search" placeholder="Search..." id="searchmovie" required>
+            <button class="btn btn-primary btn-block" id="buttonGet">Search Movie</button>
+        </div>
+        <div class="row">
+            <!--<button type="button" class="btn btn-default" id="buttonGet">Search</button>-->
+        </div>
+        <div class="row">
+
+            <div class="movieresult" id="result">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="rmdb.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</div>
+
+</body>
+</html>

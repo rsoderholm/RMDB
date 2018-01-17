@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://dvwebb.mah.se/af8559/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./Title_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" href="./Title_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Title_files/mediacenter.css">
+    <link rel="icon" href="http://dvwebb.mah.se/af8559/favicon.ico">
+
+
+    <script src="./Title_files/jquery.form.js.download"></script><style></style>
+
+
+    <title>MediaCenter</title>
+</head>
+<body cz-shortcut-listen="true">
+
+<nav class="navbar navbar-inverse" id="nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dvwebb.mah.se/af8559/index.html">MC</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://dvwebb.mah.se/af8559/index.html">Media Center</a></li>
+                <li><a href="http://dvwebb.mah.se/af8559/rmdb.html">Movies</a></li>
+            </ul>
+
+
+        </div>
+
+
+    </div>
+</nav>
+
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-group" action="http://dvwebb.mah.se/af8559/server.php" enctype="multipart/form-data" method="post" id="myForm">
+                <h3 class="h3">Upload Media</h3>
+                <select class="form-control" name="type" id="selectedMedia">
+                    <option selected="selected" value="default">Choose upload type</option>
+                    <option value="photo">Photo</option>
+                    <option value="video">Video</option>
+                    <option value="audio">Audio</option>
+                </select>
+                <input type="file" name="media" id="media" class="btn">
+                <input type="text" name="title" id="fileTitle" class="form-control" placeholder="Title" style="margin-bottom: 10px;">
+                <input type="submit" value="Save Media" class="btn btn-primary btn-block">
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3 class="h3">Show Media</h3>
+            <select class="form-control" id="mediatype">
+                <option value="">Choose media type to show</option>
+                <option value="photo">Photo</option>
+                <option value="audio">Audio</option>
+                <option value="video">Video</option>
+            </select>
+            <button class="btn btn-primary btn-block" id="get" style="margin-top: 10px;">Show Database Content</button>
+            <div id="results" class="col-md-12"></div>
+        </div>
+    </div>
+
+
+</div>
+<script src="./Title_files/bootstrap.min.js.download" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./Title_files/mediacenter.js.download"></script>
+
+
+</body></html>
